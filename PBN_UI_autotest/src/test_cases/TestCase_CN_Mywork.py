@@ -48,10 +48,6 @@ class PNB_CN_Mywork(unittest.TestCase):
         print ""
         print "start CN mywork case"
 
-        Debug_Set_GroupID(self.driver,1)
-
-        self.driver.implicitly_wait(3)
-
         before_test(self.driver)
 
         self.driver.implicitly_wait(3)

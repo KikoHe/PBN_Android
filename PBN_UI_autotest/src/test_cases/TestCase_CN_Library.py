@@ -49,8 +49,6 @@ class PNB_CN_LIB(unittest.TestCase):
         print ""
         print "start CN Library case"
 
-        Debug_Set_GroupID(self.driver,1)
-
         self.driver.implicitly_wait(3)
 
         before_test(self.driver)
@@ -74,9 +72,15 @@ class PNB_CN_LIB(unittest.TestCase):
 
         Check_CN_Lib_Banner(driver)
 
+        driver.implicitly_wait(3)
+
         checkcncategorytab(driver)
 
+        driver.implicitly_wait(3)
+
         checklibrarylist(driver)
+
+        driver.implicitly_wait(3)
 
         checkcntab(driver)
 

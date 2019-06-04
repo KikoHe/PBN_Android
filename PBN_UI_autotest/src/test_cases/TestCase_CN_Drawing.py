@@ -51,10 +51,6 @@ class PNB_CN_DRAW(unittest.TestCase):
         print ""
         print "start CN Drawwing case"
 
-        Debug_Set_GroupID(self.driver,1)
-
-        self.driver.implicitly_wait(3)
-
         before_test(self.driver)
 
         self.driver.implicitly_wait(3)

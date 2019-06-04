@@ -13,9 +13,15 @@ from src.common.gesture_mainpulation import *
 
 def before_test(driver):
 
+    Debug_Set_GroupID(driver, 1)
+
+    Close_Newwork_Error(driver)
+
     closewelcomeview(driver)
 
     closedrawview(driver)
+
+
 
 def closewelcomeview(driver):
     '''关闭启动时的免责声明页面'''

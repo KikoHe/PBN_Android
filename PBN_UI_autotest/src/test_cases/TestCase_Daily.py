@@ -47,10 +47,6 @@ class PNB_DAILY(unittest.TestCase):
         print ""
         print "start Daily case"
 
-        Debug_Set_GroupID(self.driver, 123)
-
-        self.driver.implicitly_wait(3)
-
         before_test(self.driver)
 
         self.driver.implicitly_wait(3)

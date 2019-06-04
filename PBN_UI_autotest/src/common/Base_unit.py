@@ -9,6 +9,7 @@ import time, base64, unittest
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from config import globalparameter
+from src.common.before_test import *
 
 def isExistElementByID(driver, ele_id):
     """
@@ -66,9 +67,16 @@ def isExistTextInElementsByxpath(driver, ele_xpath,number,word):
         return False
 
 
-def isExistTextInElementByxpath(driver, ele_xpath):
+def isExistInElementByxpath(driver, ele_xpath):
     '''Usage: 通过xpath判断该元素文案是否预期'''
     if  driver.find_element_by_xpath(ele_xpath):
+        return True
+    else:
+        return False
+
+def isExistTextInElementByxpath(driver, ele_xpath,word):
+    '''Usage: 通过xpath判断该元素文案是否预期'''
+    if  driver.find_element_by_xpath(ele_xpath).text == word:
         return True
     else:
         return False
@@ -167,3 +175,9 @@ def Allow_box(driver):
     while isExistElementByID(driver,"com.android.packageinstaller:id/permission_allow_button"):
         driver.find_element_by_id("com.android.packageinstaller:id/permission_allow_button").click()
         driver.implicitly_wait(3)
+
+
+def Close_Newwork_Error(driver):
+    '''启动app时，网络错误时重试'''
+    while isExistElementByID(driver,"cv_try_again"):
+        driver.find_element_by_id("cv_try_again").click()
