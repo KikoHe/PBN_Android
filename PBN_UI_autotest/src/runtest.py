@@ -40,13 +40,13 @@ suite.addTest(TestCase_Drawing.PNB_DRAW("Reward_AD"))
 suite.addTest(TestCase_Drawing.PNB_DRAW("Drawing_Flower"))
 suite.addTest(TestCase_Drawing.PNB_DRAW("Drawing_horse"))
 
-suite.addTest(TestCase_CN_Daily.PNB_CN_Daily("Daily_CN_Static_Check"))
-
-suite.addTest(TestCase_CN_Mywork.PNB_CN_Mywork("MyWork_CN_Static_Check"))
-
 suite.addTest(TestCase_CN_Library.PNB_CN_LIB("Check_CN_Library"))
 suite.addTest(TestCase_CN_Library.PNB_CN_LIB("Category_CN_check"))
 suite.addTest(TestCase_CN_Library.PNB_CN_LIB("Category_CN_swipe"))
+
+suite.addTest(TestCase_CN_Daily.PNB_CN_Daily("Daily_CN_Static_Check"))
+
+suite.addTest(TestCase_CN_Mywork.PNB_CN_Mywork("MyWork_CN_Static_Check"))
 
 suite.addTest(TestCase_CN_Drawing.PNB_CN_DRAW("Reward_CN_AD"))
 suite.addTest(TestCase_CN_Drawing.PNB_CN_DRAW("Drawing_CN_Flower"))

@@ -8,7 +8,7 @@ from src.common.Base_unit import *
 from src.pages.Library_page import *
 from src.pages.Catagory_page import *
 from src.common.gesture_mainpulation import *
-from src.common.before_test import *
+from src.common.before_APPtest import *
 from selenium.webdriver.support import expected_conditions as EC
 
 desired_caps = {}

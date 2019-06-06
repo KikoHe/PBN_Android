@@ -224,7 +224,15 @@ def Drawing_pic_flower(driver):
     driver.implicitly_wait(3)
     print "9"
 
-    time.sleep(3)
+    time.sleep(5)
+
+    m = 0
+    while not isExistElementByID(driver, "flParticle"):
+        driver.implicitly_wait(3)
+        m = m + 1
+        if m > 3:
+            break
+            print "enter Drawing_Done_UI error"
 
     Drawing_Done_UI_Check(driver)
 
@@ -331,7 +339,13 @@ def Drawing_pic_horse(driver):
     driver.implicitly_wait(3)
     print "14"
 
-    time.sleep(3)
+    m = 0
+    while not isExistElementByID(driver, "flParticle"):
+        driver.implicitly_wait(3)
+        m = m + 1
+        if m > 3:
+            break
+            print "enter Drawing_Done_UI error"
 
     Drawing_Done_UI_Check(driver)
 

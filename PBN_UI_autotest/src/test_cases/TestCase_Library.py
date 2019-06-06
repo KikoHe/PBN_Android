@@ -4,7 +4,6 @@ import os,time,unittest
 from selenium import webdriver
 from src.common.Base_unit import *
 from src.pages.Library_page import *
-from src.common.before_test import *
 from src.pages.Catagory_page import *
 
 
@@ -35,7 +34,6 @@ class PNB_Library(unittest.TestCase):
         cls.driver.quit()
 
     def setUp(self):
-
 
         self.driver.launch_app()
 
@@ -78,10 +76,16 @@ class PNB_Library(unittest.TestCase):
         '''点击素材分类tab，检查分类页素材'''
         driver = self.driver
 
+        # driver.implicitly_wait(3)
+
         clickbytext(driver,
                     "//android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.TextView[contains(@text,'Bonus')]")
 
+        driver.implicitly_wait(3)
+
         checkBonus(driver)
+
+        driver.implicitly_wait(3)
 
         checkclickcategory(driver)
 
@@ -99,8 +103,8 @@ class PNB_Library(unittest.TestCase):
 if __name__=='__main__':
     suite = unittest.TestSuite()
     suite.addTest(PNB_Library("Library_static_check"))
-    # suite.addTest(PNB_Library("Category_check"))
-    # suite.addTest(PNB_Library("Category_swipe"))
+    suite.addTest(PNB_Library("Category_check"))
+    suite.addTest(PNB_Library("Category_swipe"))
     runner = unittest.TextTestRunner()
     runner.run(suite)
 

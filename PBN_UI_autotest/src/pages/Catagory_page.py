@@ -11,7 +11,6 @@ from selenium.webdriver.support.wait import WebDriverWait
 from src.common.Base_unit import *
 from src.common.gesture_mainpulation import *
 from src.pages.Library_page import *
-from src.common.before_test import *
 
 def checkcategorytab(driver):
     '''检查第一页分类标题是否正常'''
@@ -62,12 +61,22 @@ def checkclickcategory(driver):
 
         driver.implicitly_wait(3)
 
+        wait_until_id(driver,"recyclerView")
+
         checklibrarylist(driver)
 
-        assert (get_ele_attribute(driver,"//android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.TextView[contains(@text,'{label}')]".format(
-                        label=category[i]),"selected") == "true")
+        driver.implicitly_wait(3)
 
-        print category[i] + 'display normal'
+        m = 0
+        while (get_ele_attribute(driver,"//android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.TextView[contains(@text,'{label}')]".format(label=category[i]),"selected") != "true"):
+            driver.implicitly_wait(3)
+            clickbytext(driver,"//android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.TextView[contains(@text,'{label}')]".format(label=category[i]))
+            m = m + 1
+            if m > 3:
+                break
+                print "click" + category[i] + "fail"
+
+        print 'clicl to' + category[i]
 
         i = i + 1
 
@@ -94,7 +103,7 @@ def checkswipeleftcategorylist(driver):
             m = m + 1
             if m > 3:
                 break
-                print "swipe category error"
+                print "swipe" + category[i] + "fail"
 
         driver.implicitly_wait(3)
 

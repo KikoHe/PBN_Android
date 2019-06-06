@@ -4,7 +4,6 @@ import os,time,unittest
 from selenium import webdriver
 from src.common.Base_unit import *
 from src.pages.Library_page import *
-from src.common.before_test import *
 from src.pages.Drawing_page import *
 from src.pages.Catagory_page import *
 from src.pages.AD_page import *
@@ -50,8 +49,6 @@ class PNB_DRAW(unittest.TestCase):
         print ""
         print "start Drawwing case"
 
-        Debug_Set_GroupID(self.driver,1)
-
         self.driver.implicitly_wait(3)
 
         before_test(self.driver)
@@ -74,6 +71,14 @@ class PNB_DRAW(unittest.TestCase):
 
         driver = self.driver
 
+        m = 0
+        while not isExistElementByID(driver,"recyclerView"):
+            driver.implicitly_wait(3)
+            m = m +1
+            if m > 3:
+                break
+                print "enter library error"
+
         ele = driver.find_elements_by_xpath(
             "//android.support.v4.view.ViewPager/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout")
 
@@ -88,7 +93,13 @@ class PNB_DRAW(unittest.TestCase):
 
         driver = self.driver
 
-        time.sleep(3)
+        m = 0
+        while not isExistElementByID(driver, "recyclerView"):
+            driver.implicitly_wait(3)
+            m = m + 1
+            if m > 3:
+                break
+                print "enter library error"
 
         ele = driver.find_elements_by_xpath("//android.support.v4.view.ViewPager/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout")
 
@@ -121,7 +132,13 @@ class PNB_DRAW(unittest.TestCase):
 
         driver = self.driver
 
-        time.sleep(3)
+        m = 0
+        while not isExistElementByID(driver, "recyclerView"):
+            driver.implicitly_wait(3)
+            m = m + 1
+            if m > 3:
+                break
+                print "enter library error"
 
         ele = driver.find_elements_by_xpath("//android.support.v4.view.ViewPager/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout")
 

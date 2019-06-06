@@ -4,7 +4,6 @@ import os,time,unittest
 from selenium import webdriver
 from src.common.Base_unit import *
 from src.pages.Library_page import *
-from src.common.before_test import *
 from src.pages.Catagory_page import *
 from src.pages.News_page import *
 

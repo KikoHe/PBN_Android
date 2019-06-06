@@ -14,26 +14,50 @@
     <SUITE FILE_PATH="coverage/PBN_UI_autotest$test_appium.coverage" NAME="test_appium Coverage Results" MODIFIED="1555064543416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test_cases" />
     <SUITE FILE_PATH="coverage/PBN_UI_autotest$TestCase_Daily.coverage" NAME="TestCase_Daily Coverage Results" MODIFIED="1559099863231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test_cases" />
     <SUITE FILE_PATH="coverage/PBN_UI_autotest$TestCase_CN_Drawwing.coverage" NAME="TestCase_CN_Drawwing Coverage Results" MODIFIED="1559528571991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test_cases" />
-    <SUITE FILE_PATH="coverage/PBN_UI_autotest$TestCase_Library.coverage" NAME="TestCase_Library Coverage Results" MODIFIED="1559542186482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test_cases" />
-    <SUITE FILE_PATH="coverage/PBN_UI_autotest$runtest.coverage" NAME="runtest Coverage Results" MODIFIED="1559556079841" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
-    <SUITE FILE_PATH="coverage/PBN_UI_autotest$TestCase_CN_Drawing.coverage" NAME="TestCase_CN_Drawing Coverage Results" MODIFIED="1559549447795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test_cases" />
+    <SUITE FILE_PATH="coverage/PBN_UI_autotest$TestCase_Library.coverage" NAME="TestCase_Library Coverage Results" MODIFIED="1559633477497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test_cases" />
+    <SUITE FILE_PATH="coverage/PBN_UI_autotest$Unittests_for_TestCase_Library_PNB_Library.coverage" NAME="Unittests for TestCase_Library.PNB_Library Coverage Results" MODIFIED="1559619785329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test_cases" />
+    <SUITE FILE_PATH="coverage/PBN_UI_autotest$runtest.coverage" NAME="runtest Coverage Results" MODIFIED="1559795499513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/PBN_UI_autotest$TestCase_CN_Drawing.coverage" NAME="TestCase_CN_Drawing Coverage Results" MODIFIED="1559634362712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test_cases" />
     <SUITE FILE_PATH="coverage/PBN_UI_autotest$Unittests_for_TestCase_Drawing_PNB_News.coverage" NAME="Unittests for TestCase_Drawing.PNB_News Coverage Results" MODIFIED="1556018590546" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test_cases" />
     <SUITE FILE_PATH="coverage/PBN_UI_autotest$Unittests_for_test_appium_PNB.coverage" NAME="Unittests for test_appium.PNB Coverage Results" MODIFIED="1554264983268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test_cases" />
     <SUITE FILE_PATH="coverage/PBN_UI_autotest$TaseCase_Library.coverage" NAME="TaseCase_Library Coverage Results" MODIFIED="1559126933616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test_cases" />
-    <SUITE FILE_PATH="coverage/PBN_UI_autotest$TestCase_CN_Daily.coverage" NAME="TestCase_CN_Daily Coverage Results" MODIFIED="1559548712407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test_cases" />
+    <SUITE FILE_PATH="coverage/PBN_UI_autotest$TestCase_CN_Daily.coverage" NAME="TestCase_CN_Daily Coverage Results" MODIFIED="1559622485627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test_cases" />
     <SUITE FILE_PATH="coverage/PBN_UI_autotest$TestCase_AD.coverage" NAME="TestCase_AD Coverage Results" MODIFIED="1558957843600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test_cases" />
     <SUITE FILE_PATH="coverage/PBN_UI_autotest$Catagory_page.coverage" NAME="Catagory_page Coverage Results" MODIFIED="1559217418642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/pages" />
     <SUITE FILE_PATH="coverage/PBN_UI_autotest$Run.coverage" NAME="Run Coverage Results" MODIFIED="1559208181848" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/PBN_UI_autotest$TestCase_CN_Mywork.coverage" NAME="TestCase_CN_Mywork Coverage Results" MODIFIED="1559529755888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test_cases" />
     <SUITE FILE_PATH="coverage/PBN_UI_autotest$Unittests_for_TestCase_AD_PNB_News.coverage" NAME="Unittests for TestCase_AD.PNB_News Coverage Results" MODIFIED="1555382705746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test_cases" />
     <SUITE FILE_PATH="coverage/PBN_UI_autotest$TestCase_CN_Library.coverage" NAME="TestCase_CN_Library Coverage Results" MODIFIED="1559529051384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test_cases" />
+    <SUITE FILE_PATH="coverage/PBN_UI_autotest$Unittests_in_TestCase_Library_py.coverage" NAME="Unittests in TestCase_Library.py Coverage Results" MODIFIED="1559628256301" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test_cases" />
     <SUITE FILE_PATH="coverage/PBN_UI_autotest$Unittests_in_testcase_library_ui_py.coverage" NAME="Unittests in testcase_library_ui.py Coverage Results" MODIFIED="1554718965519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test_cases" />
-    <SUITE FILE_PATH="coverage/PBN_UI_autotest$TestCase_Drawing.coverage" NAME="TestCase_Drawing Coverage Results" MODIFIED="1559547683445" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test_cases" />
-    <SUITE FILE_PATH="coverage/PBN_UI_autotest$TestCase_MyWork.coverage" NAME="TestCase_MyWork Coverage Results" MODIFIED="1559211487300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test_cases" />
+    <SUITE FILE_PATH="coverage/PBN_UI_autotest$TestCase_Drawing.coverage" NAME="TestCase_Drawing Coverage Results" MODIFIED="1559630720953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test_cases" />
     <SUITE FILE_PATH="coverage/PBN_UI_autotest$draft.coverage" NAME="draft Coverage Results" MODIFIED="1559284440593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test_cases" />
+    <SUITE FILE_PATH="coverage/PBN_UI_autotest$TestCase_MyWork.coverage" NAME="TestCase_MyWork Coverage Results" MODIFIED="1559726505125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test_cases" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/runtest.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="331">
+              <caret line="50" column="50" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
+              <folding>
+                <element signature="e#60#87#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/globalparameter.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="28" column="34" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -65,9 +89,6 @@
       <find>draww</find>
     </findStrings>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -91,47 +112,89 @@
         <option value="$PROJECT_DIR$/src/test_cases/test_draft.py" />
         <option value="$PROJECT_DIR$/src/test_cases/TaseCase_Library.py" />
         <option value="$PROJECT_DIR$/src/test_cases/test_daily.py" />
-        <option value="$PROJECT_DIR$/src/common/before_test.py" />
         <option value="$PROJECT_DIR$/src/pages/News_page.py" />
-        <option value="$PROJECT_DIR$/src/pages/Library_page.py" />
         <option value="$PROJECT_DIR$/src/Run.py" />
-        <option value="$PROJECT_DIR$/src/pages/Catagory_page.py" />
-        <option value="$PROJECT_DIR$/src/common/send_mail.py" />
         <option value="$PROJECT_DIR$/src/test_cases/TestCase_CN.py" />
         <option value="$PROJECT_DIR$/src/pages/CN_page.py" />
+        <option value="$PROJECT_DIR$/src/test_cases/TestCase_CN_Drawwing.py" />
+        <option value="$PROJECT_DIR$/src/pages/AD_page.py" />
+        <option value="$PROJECT_DIR$/src/test_cases/draft.py" />
+        <option value="$PROJECT_DIR$/src/common/before_test.py" />
+        <option value="$PROJECT_DIR$/src/common/before_APPtest.py" />
+        <option value="$PROJECT_DIR$/src/test_cases/TestCase_CN_Daily.py" />
+        <option value="$PROJECT_DIR$/src/pages/MyWork_page.py" />
+        <option value="$PROJECT_DIR$/src/test_cases/TestCase_CN_Library.py" />
         <option value="$PROJECT_DIR$/src/test_cases/TestCase_CN_Mywork.py" />
         <option value="$PROJECT_DIR$/src/test_cases/TestCase_Daily.py" />
         <option value="$PROJECT_DIR$/src/test_cases/TestCase_News.py" />
-        <option value="$PROJECT_DIR$/src/test_cases/TestCase_CN_Daily.py" />
-        <option value="$PROJECT_DIR$/src/test_cases/TestCase_MyWork.py" />
+        <option value="$PROJECT_DIR$/src/pages/Library_page.py" />
         <option value="$PROJECT_DIR$/src/test_cases/TestCase_Library.py" />
-        <option value="$PROJECT_DIR$/src/common/Base_unit.py" />
-        <option value="$PROJECT_DIR$/src/test_cases/TestCase_CN_Drawwing.py" />
-        <option value="$PROJECT_DIR$/src/test_cases/TestCase_CN_Library.py" />
-        <option value="$PROJECT_DIR$/src/pages/AD_page.py" />
-        <option value="$PROJECT_DIR$/src/pages/Drawing_page.py" />
-        <option value="$PROJECT_DIR$/src/test_cases/TestCase_Drawing.py" />
         <option value="$PROJECT_DIR$/src/test_cases/TestCase_CN_Drawing.py" />
-        <option value="$PROJECT_DIR$/src/runtest.py" />
-        <option value="$PROJECT_DIR$/src/test_cases/draft.py" />
-        <option value="$PROJECT_DIR$/src/pages/MyWork_page.py" />
+        <option value="$PROJECT_DIR$/src/pages/Drawing_page.py" />
+        <option value="$PROJECT_DIR$/src/common/Base_unit.py" />
+        <option value="$PROJECT_DIR$/src/pages/Catagory_page.py" />
+        <option value="$PROJECT_DIR$/src/common/send_mail.py" />
+        <option value="$PROJECT_DIR$/src/test_cases/TestCase_Drawing.py" />
         <option value="$PROJECT_DIR$/config/globalparameter.py" />
+        <option value="$PROJECT_DIR$/src/runtest.py" />
+        <option value="$PROJECT_DIR$/src/test_cases/TestCase_MyWork.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1920" />
-    <option name="height" value="958" />
+    <option name="height" value="919" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="PBN_UI_autotest的副本" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PBN_UI_autotest的副本" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PBN_UI_autotest的副本" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PBN_UI_autotest的副本" type="462c0819:PsiDirectoryNode" />
+              <item name="Apk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PBN_UI_autotest的副本" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PBN_UI_autotest的副本" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PBN_UI_autotest的副本" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PBN_UI_autotest的副本" type="462c0819:PsiDirectoryNode" />
+              <item name="report" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PBN_UI_autotest的副本" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PBN_UI_autotest的副本" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PBN_UI_autotest的副本" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PBN_UI_autotest的副本" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PBN_UI_autotest的副本" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PBN_UI_autotest的副本" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test_cases" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
-      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -155,28 +218,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.runtest">
-    <configuration name="TestCase_CN_Daily" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PBN_UI_autotest" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/test_cases" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/test_cases/TestCase_CN_Daily.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="TestCase_CN_Drawing" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PBN_UI_autotest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -243,6 +284,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="TestCase_MyWork" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PBN_UI_autotest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/test_cases" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/test_cases/TestCase_MyWork.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="runtest" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PBN_UI_autotest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -268,10 +331,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.runtest" />
+        <item itemvalue="Python.TestCase_MyWork" />
         <item itemvalue="Python.TestCase_CN_Drawing" />
-        <item itemvalue="Python.TestCase_CN_Daily" />
-        <item itemvalue="Python.TestCase_Drawing" />
         <item itemvalue="Python.TestCase_Library" />
+        <item itemvalue="Python.TestCase_Drawing" />
       </list>
     </recent_temporary>
   </component>
@@ -297,7 +360,12 @@
       <workItem from="1558928312286" duration="14020000" />
       <workItem from="1558957474968" duration="35637000" />
       <workItem from="1559120713678" duration="67330000" />
-      <workItem from="1559562775474" duration="589000" />
+      <workItem from="1559559389092" duration="439000" />
+      <workItem from="1559563923579" duration="2431000" />
+      <workItem from="1559619425110" duration="964000" />
+      <workItem from="1559620395044" duration="668000" />
+      <workItem from="1559621102775" duration="11453000" />
+      <workItem from="1559724107713" duration="3371000" />
     </task>
     <servers />
   </component>
@@ -317,20 +385,27 @@
     <history-entry file="Unittests_for_TestCase_Drawing_PNB_News - 2019.04.23 at 19h 23m 11s.xml">
       <configuration name="Unittests for TestCase_Drawing.PNB_News" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_for_TestCase_Library_PNB_Library - 2019.06.04 at 11h 43m 06s.xml">
+      <configuration name="Unittests for TestCase_Library.PNB_Library" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_TestCase_Library_py - 2019.06.04 at 14h 04m 16s.xml">
+      <configuration name="Unittests in TestCase_Library.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="222196000" />
+    <option name="totallyTimeSpent" value="240933000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="958" extended-state="6" />
+    <frame x="0" y="23" width="1920" height="919" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49824563" visible="true" weight="0.2683706" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49824563" visible="true" weight="0.28168264" />
       <window_info id="Structure" order="1" sideWeight="0.5017544" side_tool="true" weight="0.2657082" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.5035377" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3985932" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33857316" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39791185" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -387,17 +462,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/common/AD_unit.py" />
-    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="190" selection-start-line="190" selection-end-line="190" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file:///Library/Python/2.7/site-packages/selenium/webdriver/remote/webdriver.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
@@ -422,13 +486,6 @@
     <entry file="file://$PROJECT_DIR$/report/201905301240Report.html" />
     <entry file="file://$PROJECT_DIR$/report/201905301412Report.html" />
     <entry file="file://$PROJECT_DIR$/report/201905301409Report.html" />
-    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/smtplib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="621" selection-start-line="621" selection-end-line="621" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/report/201905301452Report.html" />
     <entry file="file://$PROJECT_DIR$/src/test_cases/Del_TestCase_AD.py" />
     <entry file="file://$PROJECT_DIR$/src/201905301646report.html" />
@@ -455,80 +512,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/News_page.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
-          <folding>
-            <element signature="e#56#83#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/runner.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="150" selection-start-line="150" selection-end-line="150" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test_cases/TestCase_Daily.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="44" column="22" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="22" />
-          <folding>
-            <element signature="e#24#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test_cases/TestCase_News.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="e#24#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/Library_page.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="76" column="26" lean-forward="true" selection-start-line="76" selection-start-column="26" selection-end-line="76" selection-end-column="26" />
-          <folding>
-            <element signature="e#56#83#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test_cases/TestCase_CN_Mywork.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="73" column="18" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
-          <folding>
-            <element signature="e#24#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test_cases/TestCase_CN_Daily.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="46" column="21" lean-forward="true" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
-          <folding>
-            <element signature="e#24#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test_cases/TestCase_MyWork.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="124" column="9" selection-start-line="124" selection-start-column="9" selection-end-line="124" selection-end-column="9" />
-          <folding>
-            <element signature="e#24#47#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -542,107 +529,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/gesture_mainpulation.py">
+    <entry file="file://$PROJECT_DIR$/src/test_cases/1111.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#24#49#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/before_test.py">
+    <entry file="file://$PROJECT_DIR$/src/common/before_APPtest.py" />
+    <entry file="file://$PROJECT_DIR$/src/pages/MyWork_page.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="865">
-          <caret line="68" column="34" selection-start-line="68" selection-start-column="34" selection-end-line="68" selection-end-column="34" />
+        <state relative-caret-position="118">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
           <folding>
-            <element signature="e#105#134#0" expanded="true" />
+            <element signature="e#56#83#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test_cases/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test_cases/TestCase_News.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-367">
+          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/News_page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+          <folding>
+            <element signature="e#56#83#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test_cases/TestCase_CN_Daily.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test_cases/TestCase_Daily.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test_cases/TestCase_CN_Mywork.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-391">
+          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/gesture_mainpulation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="47" column="13" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/CN_page.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+        <state relative-caret-position="132">
+          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
           <folding>
             <element signature="e#56#83#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/Catagory_page.py">
+    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-          <folding>
-            <element signature="e#56#83#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="132">
+          <caret line="190" selection-start-line="190" selection-end-line="190" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test_cases/TestCase_CN_Library.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1230">
-          <caret line="82" column="32" selection-start-line="82" selection-start-column="31" selection-end-line="82" selection-end-column="32" />
-          <folding>
-            <element signature="e#24#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/Base_unit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="166" column="28" selection-start-line="166" selection-start-column="10" selection-end-line="166" selection-end-column="28" />
-          <folding>
-            <element signature="e#105#134#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test_cases/TestCase_Library.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="66" column="8" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="49" />
-          <folding>
-            <element signature="e#24#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/Drawing_page.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="334" lean-forward="true" selection-start-line="334" selection-end-line="334" />
-          <folding>
-            <element signature="e#56#83#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test_cases/TestCase_Drawing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="179" lean-forward="true" selection-start-line="179" selection-end-line="179" />
-          <folding>
-            <element signature="e#24#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/MyWork_page.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="40" column="95" selection-start-line="40" selection-start-column="95" selection-end-line="40" selection-end-column="95" />
-          <folding>
-            <element signature="e#56#83#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test_cases/TestCase_CN_Drawing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1110">
-          <caret line="83" column="16" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="16" />
+        <state relative-caret-position="212">
+          <caret line="79" column="17" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="17" />
           <folding>
             <element signature="e#24#47#0" expanded="true" />
           </folding>
@@ -651,30 +627,120 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/AD_page.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2115">
-          <caret line="149" column="4" selection-start-line="149" selection-start-column="4" selection-end-line="149" selection-end-column="4" />
+        <state relative-caret-position="235">
+          <caret line="90" column="4" selection-start-line="90" selection-start-column="4" selection-end-line="90" selection-end-column="4" />
           <folding>
             <element signature="e#56#87#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/runtest.py">
+    <entry file="file://$PROJECT_DIR$/src/pages/Drawing_page.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="610">
-          <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
+        <state relative-caret-position="466">
+          <caret line="347" column="47" selection-start-line="347" selection-start-column="47" selection-end-line="347" selection-end-column="47" />
           <folding>
-            <element signature="e#60#87#0" expanded="true" />
+            <element signature="e#56#83#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test_cases/draft.py">
+    <entry file="file://$PROJECT_DIR$/src/test_cases/TestCase_CN_Drawing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="238">
+          <caret line="142" column="43" selection-start-line="142" selection-start-column="43" selection-end-line="142" selection-end-column="43" />
           <folding>
-            <element signature="e#24#49#0" expanded="true" />
+            <element signature="e#24#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/Catagory_page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="63" column="44" selection-start-line="63" selection-start-column="44" selection-end-line="63" selection-end-column="44" />
+          <folding>
+            <element signature="e#56#83#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/Library_page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="94" column="110" selection-start-line="94" selection-start-column="98" selection-end-line="94" selection-end-column="110" />
+          <folding>
+            <element signature="e#56#83#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test_cases/TestCase_Library.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
+          <folding>
+            <element signature="e#24#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/201906051614Report.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/smtplib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="660" column="8" selection-start-line="660" selection-start-column="8" selection-end-line="660" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Base_unit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2850">
+          <caret line="190" column="15" selection-start-line="190" selection-start-column="15" selection-end-line="190" selection-end-column="15" />
+          <folding>
+            <element signature="e#105#134#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/send_mail.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="30" column="40" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="47" />
+          <folding>
+            <element signature="e#67#96#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test_cases/TestCase_MyWork.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="914">
+          <caret line="151" lean-forward="true" selection-start-line="151" selection-end-line="151" />
+          <folding>
+            <element signature="e#24#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test_cases/TestCase_Drawing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-207">
+          <caret line="46" column="35" lean-forward="true" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
+          <folding>
+            <element signature="e#24#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/runtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="50" column="50" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
+          <folding>
+            <element signature="e#60#87#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -682,17 +748,7 @@
     <entry file="file://$PROJECT_DIR$/config/globalparameter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
-          <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/send_mail.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-          <folding>
-            <element signature="e#67#96#0" expanded="true" />
-          </folding>
+          <caret line="28" column="34" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="34" />
         </state>
       </provider>
     </entry>

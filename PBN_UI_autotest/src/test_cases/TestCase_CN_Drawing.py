@@ -4,7 +4,6 @@ import os,time,unittest
 from selenium import webdriver
 from src.common.Base_unit import *
 from src.pages.Library_page import *
-from src.common.before_test import *
 from src.pages.Drawing_page import *
 from src.pages.Catagory_page import *
 from src.pages.AD_page import *
@@ -69,6 +68,15 @@ class PNB_CN_DRAW(unittest.TestCase):
         '''打开素材分类new的第二张素材，检查reward广告显示是否正常'''
 
         driver = self.driver
+        m = 0
+        while not isExistElementByID(driver,"recyclerView"):
+            driver.implicitly_wait(3)
+            m = m +1
+            if m > 3:
+                break
+                print "enter library error"
+
+        driver.implicitly_wait(5)
 
         ele = driver.find_elements_by_xpath(
             "//android.support.v4.view.ViewPager/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout")
@@ -85,7 +93,13 @@ class PNB_CN_DRAW(unittest.TestCase):
 
         driver = self.driver
 
-        time.sleep(3)
+        m = 0
+        while not isExistElementByID(driver, "recyclerView"):
+            driver.implicitly_wait(3)
+            m = m + 1
+            if m > 3:
+                break
+                print "enter library error"
 
         ele = driver.find_elements_by_xpath("//android.support.v4.view.ViewPager/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout")
 
@@ -120,7 +134,13 @@ class PNB_CN_DRAW(unittest.TestCase):
 
         driver = self.driver
 
-        time.sleep(3)
+        m = 0
+        while not isExistElementByID(driver, "recyclerView"):
+            driver.implicitly_wait(3)
+            m = m + 1
+            if m > 3:
+                break
+                print "enter library error"
 
         ele = driver.find_elements_by_xpath("//android.support.v4.view.ViewPager/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout")
 

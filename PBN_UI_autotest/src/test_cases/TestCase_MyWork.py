@@ -4,7 +4,6 @@ import os,time,unittest
 from selenium import webdriver
 from src.common.Base_unit import *
 from src.pages.Library_page import *
-from src.common.before_test import *
 from src.pages.Catagory_page import *
 from src.pages.MyWork_page import *
 
@@ -159,9 +158,9 @@ if __name__=='__main__':
 
     suite = unittest.TestSuite()
 
-    suite.addTest(PNB_MyWork("MyWork_Static_Check"))
+    # suite.addTest(PNB_MyWork("MyWork_Static_Check"))
 
-    # suite.addTest(PNB_MyWork("MyWork_Login_Check"))
+    suite.addTest(PNB_MyWork("MyWork_Login_Check"))
 
     runner = unittest.TextTestRunner()
 

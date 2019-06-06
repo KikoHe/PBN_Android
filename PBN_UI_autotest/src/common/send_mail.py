@@ -7,8 +7,8 @@ import os,smtplib,os.path,sys
 from config import globalparameter as gl
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-reload(sys)
-sys.setdefaultencoding('utf8')
+# reload(sys)
+# sys.setdefaultencoding('utf8')
 
 class send_email:
     # 定义邮件内容
@@ -24,7 +24,7 @@ class send_email:
         # 定义附件名称（附件的名称可以随便定义，你写的是什么邮件里面显示的就是什么）
         report_file["Content-Disposition"] = 'attachment;filename='+reportName
         msg.attach(report_file) # 添加附件
-        msg['Subject'] = 'PBN_Android Auto Test Report : ' + reportName # 邮件标题
+        msg['Subject'] = '冒烟测试报告 : ' + reportName # 邮件标题
         msg['From'] = gl.email_name  #发件人
         msg['To'] = gl.email_To  #收件人列表
         try:
@@ -32,7 +32,8 @@ class send_email:
             server.login(gl.email_name,gl.email_password)
             server.sendmail(msg['From'],msg['To'].split(';'),msg.as_string())
             server.quit()
-        except smtplib.SMTPException:
+        except smtplib.SMTPException,msg:
+            print msg
             print "send mail fail"
             # self.mylog.error(u'send mail fail  at'+__file__)
         else:

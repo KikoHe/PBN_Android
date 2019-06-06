@@ -11,7 +11,6 @@ from selenium.webdriver.support.wait import WebDriverWait
 from src.common.Base_unit import *
 from src.common.gesture_mainpulation import *
 from src.pages.Library_page import *
-from src.common.before_test import *
 
 
 def CheckMywWorkNoPic(driver):

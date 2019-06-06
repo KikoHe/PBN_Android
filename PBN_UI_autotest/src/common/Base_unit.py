@@ -9,7 +9,7 @@ import time, base64, unittest
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from config import globalparameter
-from src.common.before_test import *
+from src.common.gesture_mainpulation import *
 
 def isExistElementByID(driver, ele_id):
     """
@@ -67,14 +67,14 @@ def isExistTextInElementsByxpath(driver, ele_xpath,number,word):
         return False
 
 
-def isExistInElementByxpath(driver, ele_xpath):
+def isExistTextInElementByxpath(driver, ele_xpath):
     '''Usage: 通过xpath判断该元素文案是否预期'''
     if  driver.find_element_by_xpath(ele_xpath):
         return True
     else:
         return False
 
-def isExistTextInElementByxpath(driver, ele_xpath,word):
+def isExistTextwordInElementByxpath(driver, ele_xpath,word):
     '''Usage: 通过xpath判断该元素文案是否预期'''
     if  driver.find_element_by_xpath(ele_xpath).text == word:
         return True
@@ -132,8 +132,9 @@ def get_ele_attribute(driver,ele_xpath,attribute):
     return ele
 
 
-def Debug_Set_GroupID(driver,id):
+def DebugApp_Set_GroupID(driver,id):
     '''测试包设置group id'''
+    
     if isExistElementByClass(driver,"android.widget.EditText"):
         print "Test APP"
         driver.find_element_by_class_name("android.widget.EditText").clear()
@@ -179,5 +180,80 @@ def Allow_box(driver):
 
 def Close_Newwork_Error(driver):
     '''启动app时，网络错误时重试'''
+
     while isExistElementByID(driver,"cv_try_again"):
         driver.find_element_by_id("cv_try_again").click()
+        driver.implicitly_wait(3)
+
+
+def before_test(driver):
+    ''''启动前准备'''
+    DebugApp_Set_GroupID(driver, 1)
+
+    Close_Newwork_Error(driver)
+
+    closewelcomeview(driver)
+
+    closedrawview(driver)
+
+
+
+def closewelcomeview(driver):
+    '''关闭启动时的免责声明页面'''
+
+    if isExistElementByID(driver,"paint.by.number.pixel.art.coloring.drawing.puzzle:id/cv_accept") == True:
+
+        checkwelcomeview(driver)
+
+        driver.implicitly_wait(2)
+
+        clickbyid(driver,"paint.by.number.pixel.art.coloring.drawing.puzzle:id/cv_accept")
+
+        driver.implicitly_wait(2)
+
+        print "Skip Privacy Policy and Terms View"
+
+
+
+def checkwelcomeview(driver):
+    '''检查免责声明页面'''
+
+    try:
+        assert (isExistElementByID(driver,"paint.by.number.pixel.art.coloring.drawing.puzzle:id/action_bar_root") == True)
+        assert (isExistElementByID(driver,"android:id/content") == True)
+
+        assert (isExistElementByID(driver,"paint.by.number.pixel.art.coloring.drawing.puzzle:id/cv_accept") == True)
+        # assert (isExistElementByClass(driver,"//android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.ImageView") == True)
+
+
+        assert (isExistTextInElementsByxpath(driver, "//android.widget.ScrollView/android.widget.LinearLayout/android.widget.TextView",0,"Please accept our Privacy Policy and Terms of Use to proceed.") == True)
+        assert (isExistTextInElementsByxpath(driver, "//android.widget.ScrollView/android.widget.LinearLayout/android.widget.TextView",1,"Note that using the app you grant us the right to process your personal data as described in Privacy Policy including providing them to our partners to show interest-based ad. By accepting you are confirming that you are over the age of ten.") == True)
+        assert (isExistTextInElementsByxpath(driver, "//android.widget.ScrollView/android.widget.LinearLayout/android.widget.TextView",2,"You can opt-out of interest-based ad as described in Privacy Policy.") == True)
+        assert (isExistTextInElementsByxpath(driver, "//android.widget.ScrollView/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.TextView",0,"Accept") == True)
+
+    except AssertionError,msg:
+
+        print msg
+        print "Privacy Policy and Terms View Error"
+
+
+
+def closedrawview(driver):
+    '''关闭新手引导'''
+
+    if isExistElementByID(driver, "paint.by.number.pixel.art.coloring.drawing.puzzle:id/fillColorImageView"):
+
+        driver.find_element_by_id("paint.by.number.pixel.art.coloring.drawing.puzzle:id/btnExit").click()
+
+        driver.implicitly_wait(2)
+
+        print "Close Coloring View"
+
+def wait_until_id(driver,id):
+
+    n = 0
+    while not isExistElementByID(driver, id):
+        driver.implicitly_wait(3)
+        n = n + 1
+        if n > 3:
+            break

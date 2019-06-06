@@ -92,12 +92,12 @@ def checkcategoryselected(driver):
 def checklibrarylist(driver):
     '''列表图片'''
     try:
-        assert  (isExistElementByID(driver, "paint.by.number.pixel.art.coloring.drawing.puzzle:id/recyclerView") ==True)
-        assert  (isExistElementsByID(driver, "paint.by.number.pixel.art.coloring.drawing.puzzle:id/rootLayout") ==True)
+        assert  (isExistElementByID(driver, "paint.by.number.pixel.art.coloring.drawing.puzzle:id/recyclerView") ==True),"1"
+        assert  (isExistElementsByID(driver, "paint.by.number.pixel.art.coloring.drawing.puzzle:id/rootLayout") ==True),"2"
         swipe_down(driver)
         driver.implicitly_wait(2)
-        assert (isExistElementByID(driver, "paint.by.number.pixel.art.coloring.drawing.puzzle:id/bannerViewPager") == False)
-        assert (isExistElementsByID(driver, "paint.by.number.pixel.art.coloring.drawing.puzzle:id/rootLayout") == True)
+        assert (isExistElementByID(driver, "paint.by.number.pixel.art.coloring.drawing.puzzle:id/bannerViewPager") == False),"3"
+        assert (isExistElementsByID(driver, "paint.by.number.pixel.art.coloring.drawing.puzzle:id/rootLayout") == True),"4"
         swipe_down(driver)
         driver.implicitly_wait(2)
         swipe_up(driver)
@@ -106,7 +106,7 @@ def checklibrarylist(driver):
         driver.implicitly_wait(2)
         swipe_up(driver)
         driver.implicitly_wait(2)
-        assert (isExistElementByID(driver, "paint.by.number.pixel.art.coloring.drawing.puzzle:id/bannerViewPager") == True)
+        assert (isExistElementByID(driver, "paint.by.number.pixel.art.coloring.drawing.puzzle:id/bannerViewPager") == True),"5"
     except AssertionError,msg:
         print msg
         print "library list error"
