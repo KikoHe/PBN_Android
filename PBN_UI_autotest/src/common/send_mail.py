@@ -9,7 +9,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 # reload(sys)
 # sys.setdefaultencoding('utf8')
-
+import time
 class send_email:
     # 定义邮件内容
     def email_init(self,report,reportName):
@@ -32,12 +32,12 @@ class send_email:
             server.login(gl.email_name,gl.email_password)
             server.sendmail(msg['From'],msg['To'].split(';'),msg.as_string())
             server.quit()
-        except smtplib.SMTPException,msg:
-            print msg
-            print "send mail fail"
+        except smtplib.SMTPException as msg:
+            print (msg)
+            print ("send mail fail")
             # self.mylog.error(u'send mail fail  at'+__file__)
         else:
-            print "send mail success"
+            print ("send mail success")
 
     def sendReport(self):
         # 找到最新的测试报告

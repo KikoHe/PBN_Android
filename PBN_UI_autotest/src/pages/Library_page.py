@@ -16,24 +16,16 @@ def checkbanner(driver):
 
     if isExistTextInElementByID(driver, "paint.by.number.pixel.art.coloring.drawing.puzzle:id/view_text",
                                 "Daily Update") == True:
-
         checkdailybanner(driver)
-
         driver.swipe(1000, 300, 100, 300, 3000)
-
         checkfbbanner(driver)
-
     else:
-
         checkfbbanner(driver)
-
         driver.swipe(1000, 300, 100, 300, 3000)
-
         checkdailybanner(driver)
 
 def checkfbbanner(driver):
     '''FB banner'''
-
     try:
         assert  (isExistElementByID(driver,"paint.by.number.pixel.art.coloring.drawing.puzzle:id/bannerViewPager")==True),"bannerViewPager error"
         assert  (isExistElementByID(driver,"paint.by.number.pixel.art.coloring.drawing.puzzle:id/root")==True),"root error"
@@ -42,15 +34,14 @@ def checkfbbanner(driver):
         assert  (isExistTextInElementByID(driver, "paint.by.number.pixel.art.coloring.drawing.puzzle:id/view_text", "Exclusive images") ==True),"Exclusive images error"
         assert  (isExistTextInElementByID(driver, "paint.by.number.pixel.art.coloring.drawing.puzzle:id/view_sub_text", "Only on our Facebook page") ==True),"Only on our Facebook page error"
         assert  (isExistTextInElementByID(driver, "paint.by.number.pixel.art.coloring.drawing.puzzle:id/view_btn", "Open") ==True),"Open error"
-    except AssertionError,msg:
-        print msg
-        print "fb banner error"
+    except AssertionError as msg:
+        print (msg)
+        print ("fb banner error")
     else:
-        print "fb banner pass"
+        print ("fb banner pass")
 
 def checkdailybanner(driver):
     '''daily banner'''
-
     try:
         assert  (isExistElementByID(driver,"paint.by.number.pixel.art.coloring.drawing.puzzle:id/bannerViewPager")==True),"bannerViewPager error"
         assert  (isExistElementByID(driver,"paint.by.number.pixel.art.coloring.drawing.puzzle:id/root")==True),"root error"
@@ -61,18 +52,14 @@ def checkdailybanner(driver):
         assert  (isExistElementByID(driver, "paint.by.number.pixel.art.coloring.drawing.puzzle:id/view_image") ==True),"view_image error"
 
         assert  (isExistElementByID(driver, "paint.by.number.pixel.art.coloring.drawing.puzzle:id/circleIndicator") ==True),"circleIndicator error"
-
-    except AssertionError,msg:
-
-        print msg
-        print "daily banner error"
-
+    except AssertionError as msg:
+        print (msg)
+        print ("daily banner error")
     else:
-        print "daily banner pass"
+        print ("daily banner pass")
 
 def checkcategoryselected(driver):
     ''''category选中状态'''
-
     try:
         assert (get_ele_attribute(driver,"//android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.TextView[contains(@text,'New')]","selected") == "true"),"new 分类选中异常"
         assert (get_ele_attribute(driver,"//android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.TextView[contains(@text,'Bonus')]","selected") == "false"),"Bonus 分类未选中异常"
@@ -80,40 +67,26 @@ def checkcategoryselected(driver):
         driver.implicitly_wait(2)
         assert (get_ele_attribute(driver,"//android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.TextView[contains(@text,'New')]","selected") == "false"),"new 分类未选中异常"
         assert (get_ele_attribute(driver,"//android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.TextView[contains(@text,'Bonus')]","selected") == "true"), "Bonus 分类选中异常"
-
-    except AssertionError,msg:
-
-        print msg
-        print "category selected error"
-
+    except AssertionError as msg:
+        print (msg)
+        print ("category selected error")
     else:
-        print "category selected ok"
+        print ("category selected ok")
 
-def checklibrarylist(driver):
+def checklibrarylist(driver,m):
     '''列表图片'''
     try:
-        assert  (isExistElementByID(driver, "paint.by.number.pixel.art.coloring.drawing.puzzle:id/recyclerView") ==True),"1"
-        assert  (isExistElementsByID(driver, "paint.by.number.pixel.art.coloring.drawing.puzzle:id/rootLayout") ==True),"2"
-        swipe_down(driver)
-        driver.implicitly_wait(2)
-        assert (isExistElementByID(driver, "paint.by.number.pixel.art.coloring.drawing.puzzle:id/bannerViewPager") == False),"3"
-        assert (isExistElementsByID(driver, "paint.by.number.pixel.art.coloring.drawing.puzzle:id/rootLayout") == True),"4"
-        swipe_down(driver)
-        driver.implicitly_wait(2)
-        swipe_up(driver)
-        driver.implicitly_wait(2)
-        swipe_up(driver)
-        driver.implicitly_wait(2)
-        swipe_up(driver)
-        driver.implicitly_wait(2)
-        assert (isExistElementByID(driver, "paint.by.number.pixel.art.coloring.drawing.puzzle:id/bannerViewPager") == True),"5"
-    except AssertionError,msg:
-        print msg
-        print "library list error"
-
+        i = 0
+        while i<m:
+            assert  (isExistElementByID(driver, "paint.by.number.pixel.art.coloring.drawing.puzzle:id/recyclerView") ==True),"1"
+            assert  (isExistElementsByID(driver, "paint.by.number.pixel.art.coloring.drawing.puzzle:id/rootLayout") ==True),"2"
+            swipe_down(driver)
+            driver.implicitly_wait(2)
+            i = i+1
+    except AssertionError as msg:
+        print (msg)
     else:
-        print "library list pass"
-
+        print ("library list pass")
 
 def checktab(driver):
     '''tab'''
@@ -131,8 +104,9 @@ def checktab(driver):
         assert  (isExistTextInElementsByid(driver, "paint.by.number.pixel.art.coloring.drawing.puzzle:id/tv_title",1,"Daily")==True)
         assert  (isExistTextInElementsByid(driver, "paint.by.number.pixel.art.coloring.drawing.puzzle:id/tv_title",2,"News")==True)
         assert  (isExistTextInElementsByid(driver, "paint.by.number.pixel.art.coloring.drawing.puzzle:id/tv_title",3,"My Works")==True)
-    except AssertionError,msg:
-        print msg
-        print "tab display error"
+    except AssertionError as msg:
+        print (msg)
+        print ("tab display error")
     else:
-        print "tab display pass"
+        print ("tab display pass")
+

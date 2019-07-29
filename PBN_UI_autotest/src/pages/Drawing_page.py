@@ -12,6 +12,41 @@ from src.common.Base_unit import *
 from src.common.gesture_mainpulation import *
 from src.pages.Library_page import *
 
+def check_pic_done(driver):
+    if test_imagetestcase(driver) == 3:
+        ...
+
+def click_list_pic_number(driver,i):
+    ele = driver.find_elements_by_xpath(
+        "//android.support.v4.view.ViewPager/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout")
+    ele[i].click()
+
+# def click_list_pic(driver):
+#     '''
+#     点击素材
+#     :param driver:
+#     :return:
+#     '''
+#     ele = driver.find_elements_by_xpath(
+#         "//android.support.v4.view.ViewPager/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout")
+#     i = 0
+#     while test_imagetestcase(driver,3) == 3:
+#         i = i + 1
+#         if not isExistTextInElementByxpath(driver,
+#                                            "//android.support.v4.view.ViewPager/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout"):
+#             break
+#         ele[3].click()
+#     else:
+#         ele[3].click()
+
+def Achievement_back_box(driver,action):
+    if isExistElementByID(driver,""):
+        if action == 1:
+            clickbyid(driver,"")
+        elif action == 2:
+            clickbyid(driver,"")
+        elif action == 3:
+            clickbyid(driver,"")
 
 def Drawing_UI_check(driver):
     try:
@@ -27,63 +62,42 @@ def Drawing_UI_check(driver):
 
         assert (isExistElementByID(driver,"paint.by.number.pixel.art.coloring.drawing.puzzle:id/colorPanel") == True),"c5"
         assert (isExistElementByID(driver,"paint.by.number.pixel.art.coloring.drawing.puzzle:id/colorSelectionView") == True),"c6"
-        assert ((isExistElementByID(driver,"bannerContainer") or isExistElementByID(driver,"adBanner") or (isExistElementByID(driver,"large_bannerContainer"))) == True),"banner 广告异常"
-
-    except AssertionError,msg:
-        print msg
-        print "Drawwing view error"
-
+        # assert ((isExistElementByID(driver,"bannerContainer") or isExistElementByID(driver,"adBanner") or (isExistElementByID(driver,"large_bannerContainer"))) == True),"banner 广告异常"
+    except AssertionError as msg:
+        print (msg)
+        print ("Drawwing view error")
     else:
-        print "Drawwing view pass"
+        print ("Drawwing view pass")
 
 def Drawing_hint_check(driver):
     '''点击hint，检查hint数'''
-
-
     while isExistElementByID(driver,"paint.by.number.pixel.art.coloring.drawing.puzzle:id/btnExit"):
-
         hint_num = driver.find_element_by_id("paint.by.number.pixel.art.coloring.drawing.puzzle:id/tv_num")
-
-        print  "hints number:" + hint_num.text
-
+        print  ("hints number:" + hint_num.text)
         if hint_num.text == "AD":
-
             break
-            print hint_num.text
-
+            print (hint_num.text)
         else:
-
             clickbyid(driver, "paint.by.number.pixel.art.coloring.drawing.puzzle:id/tipsView")
-
             time.sleep(2)
-
     try:
-
         assert (isExistElementByID(driver, "paint.by.number.pixel.art.coloring.drawing.puzzle:id/btnMoreHint"))
-
-    except AssertionError, msg:
-
-        print msg
-        print "hint used error"
+    except AssertionError as msg:
+        print (msg)
+        print ("hint used error")
     else:
-        print "hint used normal"
+        print ("hint used normal")
 
 def Back_default_pic(driver):
     '''点击放大方案：还原素材初始大小、位置'''
-
     driver.tap([(540, 956)], 1000)
-
     time.sleep(3)
-
     if isExistElementByID(driver, "paint.by.number.pixel.art.coloring.drawing.puzzle:id/ivZoomBack"):
-
         driver.find_element_by_id("paint.by.number.pixel.art.coloring.drawing.puzzle:id/ivZoomBack").click()
-
         time.sleep(3)
 
 def Drawing_Done_UI_Check(driver):
     '''着色完成页UI检查'''
-
     try:
         assert (isExistElementByID(driver,"paint.by.number.pixel.art.coloring.drawing.puzzle:id/flParticle") == True),"All screen error"
         assert (isExistElementByID(driver,"paint.by.number.pixel.art.coloring.drawing.puzzle:id/shimmer_view_container") == True),"title bannerer error"
@@ -98,13 +112,11 @@ def Drawing_Done_UI_Check(driver):
         assert (isExistElementByID(driver,"paint.by.number.pixel.art.coloring.drawing.puzzle:id/fShare") == True),"fShare error"
         assert (isExistElementByID(driver,"paint.by.number.pixel.art.coloring.drawing.puzzle:id/ivShare") == True),"ivShare error"
         assert (isExistElementByID(driver,"paint.by.number.pixel.art.coloring.drawing.puzzle:id/tvContinue") == True),"tvContinue error"
-
-    except AssertionError,msg:
-        print msg
-        print "Drawwing Done View error"
-
+    except AssertionError as msg:
+        print (msg)
+        print ("Drawwing Done View error")
     else:
-        print "Drawwing Done View pass"
+        print ("Drawwing Done View pass")
 
 def Write_Review_UI(driver):
     '''评论弹窗'''
@@ -116,38 +128,26 @@ def Write_Review_UI(driver):
         assert (isExistElementByID(driver, "paint.by.number.pixel.art.coloring.drawing.puzzle:id/iv_logo") == True)
         assert (isExistElementByID(driver, "paint.by.number.pixel.art.coloring.drawing.puzzle:id/cv_rateus") == True)
         assert (isExistElementByID(driver, "paint.by.number.pixel.art.coloring.drawing.puzzle:id/tv_not_now") == True)
-
-    except AssertionError, msg:
-        print msg
-        print "Review box error"
-
+    except AssertionError as msg:
+        print (msg)
+        print ("Review box error")
     else:
-        print "Review box pass"
+        print ("Review box pass")
 
 def Close_Write_Review(driver):
     '''关闭评论弹窗'''
-
     if isExistElementByID(driver, "paint.by.number.pixel.art.coloring.drawing.puzzle:id/cv_rateus"):
-
-        Write_Review_UI(driver)
-
-        driver.implicitly_wait(5)
-
+        # Write_Review_UI(driver)
+        # driver.implicitly_wait(5)
         clickbyid(driver, "paint.by.number.pixel.art.coloring.drawing.puzzle:id/tv_not_now")
 
 def Close_Achievement(driver):
-    '''关闭弹框'''
-
+    '''关闭成就弹框'''
     if isExistElementByID(driver, "paint.by.number.pixel.art.coloring.drawing.puzzle:id/card_btn"):
-
         clickbyid(driver, "paint.by.number.pixel.art.coloring.drawing.puzzle:id/card_btn")
-
-        print "Close box"
-
 
 def Drawing_pic_flower(driver):
     '''新手引导图flower着色方案'''
-
     Back_default_pic(driver)
 
     driver.tap([(140, 656)], 1000)
@@ -155,7 +155,7 @@ def Drawing_pic_flower(driver):
     driver.tap([(994, 784)], 1000)
     driver.implicitly_wait(3)
     driver.tap([(516, 1365)], 1000)
-    print "1"
+    print("1")
 
     time.sleep(2)
     driver.tap([(210, 1080)], 1000)
@@ -163,7 +163,7 @@ def Drawing_pic_flower(driver):
     driver.tap([(678, 1258)], 1000)
     driver.implicitly_wait(3)
     driver.tap([(837, 1061)], 1000)
-    print "2"
+    print("2")
 
     time.sleep(2)
     driver.tap([(257, 805)], 1000)
@@ -171,7 +171,7 @@ def Drawing_pic_flower(driver):
     driver.tap([(774, 700)], 1000)
     driver.implicitly_wait(3)
     driver.tap([(654, 1073)], 1000)
-    print "3"
+    print("3")
 
     time.sleep(2)
     driver.tap([(404, 884)], 1000)
@@ -181,7 +181,9 @@ def Drawing_pic_flower(driver):
     driver.tap([(756, 798)], 1000)
     driver.implicitly_wait(3)
     driver.tap([(791, 868)], 1000)
-    print "4"
+    driver.implicitly_wait(3)
+    driver.tap([(444, 1055)], 1000)
+    print("4")
 
     time.sleep(2)
     driver.tap([(672, 887)], 1000)
@@ -197,17 +199,32 @@ def Drawing_pic_flower(driver):
     driver.tap([(371, 685)], 1000)
     driver.implicitly_wait(3)
     driver.tap([(395, 671)], 1000)
-    print "5"
+
+    driver.implicitly_wait(3)
+    driver.tap([(431, 905)], 1000)
+    driver.implicitly_wait(3)
+    driver.tap([(363, 781)], 1000)
+    driver.implicitly_wait(3)
+    driver.tap([(400, 742)], 1000)
+    print("5")
 
     time.sleep(2)
     driver.tap([(559, 838)], 1000)
     driver.implicitly_wait(3)
     driver.tap([(498, 680)], 1000)
-    print "6"
+
+    time.sleep(2)
+    driver.tap([(559, 895)], 1000)
+    driver.implicitly_wait(3)
+    driver.tap([(498, 749)], 1000)
+    print("6")
 
     time.sleep(2)
     driver.tap([(596, 749)], 1000)
-    print "7"
+
+    time.sleep(2)
+    driver.tap([(596, 839)], 1000)
+    print("7")
 
     time.sleep(2)
     driver.tap([(498, 752)], 1000)
@@ -217,12 +234,24 @@ def Drawing_pic_flower(driver):
     driver.tap([(526, 736)], 1000)
     driver.implicitly_wait(3)
     driver.tap([(519, 689)], 1000)
-    print "8"
+
+    time.sleep(2)
+    driver.tap([(498, 852)], 1000)
+    driver.implicitly_wait(3)
+    driver.tap([(562, 855)], 1000)
+    driver.implicitly_wait(3)
+    driver.tap([(526, 736)], 1000)
+    driver.implicitly_wait(3)
+    driver.tap([(519, 789)], 1000)
+    print("8")
 
     time.sleep(2)
     driver.tap([(551, 717)], 1000)
     driver.implicitly_wait(3)
-    print "9"
+
+    driver.tap([(551, 817)], 1000)
+    driver.implicitly_wait(3)
+    print("9")
 
     time.sleep(5)
 
@@ -232,7 +261,7 @@ def Drawing_pic_flower(driver):
         m = m + 1
         if m > 3:
             break
-            print "enter Drawing_Done_UI error"
+            print ("enter Drawing_Done_UI error")
 
     Drawing_Done_UI_Check(driver)
 
@@ -242,8 +271,11 @@ def Drawing_pic_horse(driver):
 
     Back_default_pic(driver)
 
+    driver.implicitly_wait(3)
     driver.tap([(950, 1265)], 1000)
-    print "1"
+    driver.implicitly_wait(3)
+    driver.tap([(950, 1365)], 1000)
+    print("1")
 
     driver.implicitly_wait(3)
     driver.tap([(535, 1051)], 1000)
@@ -255,7 +287,18 @@ def Drawing_pic_horse(driver):
     driver.tap([(683, 1138)], 1000)
     driver.implicitly_wait(3)
     driver.tap([(168, 807)], 1000)
-    print "2"
+
+    driver.implicitly_wait(3)
+    driver.tap([(535, 1151)], 1000)
+    driver.implicitly_wait(3)
+    driver.tap([(371, 1364)], 1000)
+    driver.implicitly_wait(3)
+    driver.tap([(615, 1304)], 1000)
+    driver.implicitly_wait(3)
+    driver.tap([(683, 1238)], 1000)
+    driver.implicitly_wait(3)
+    driver.tap([(168, 907)], 1000)
+    print("2")
 
     time.sleep(2)
     driver.tap([(205, 811)], 1000)
@@ -263,58 +306,112 @@ def Drawing_pic_horse(driver):
     driver.tap([(374, 766)], 1000)
     driver.implicitly_wait(3)
     driver.tap([(353, 850)], 1000)
-    print "3"
+
+    driver.implicitly_wait(3)
+    driver.tap([(205, 911)], 1000)
+    driver.implicitly_wait(3)
+    driver.tap([(374, 866)], 1000)
+    driver.implicitly_wait(3)
+    driver.tap([(353, 950)], 1000)
+    print("3")
 
     time.sleep(2)
     driver.tap([(281, 681)], 1000)
     driver.implicitly_wait(3)
     driver.tap([(774, 771)], 1000)
-    print "4"
+    time.sleep(2)
+    driver.tap([(281, 781)], 1000)
+    driver.implicitly_wait(3)
+    driver.tap([(774, 871)], 1000)
+    print("4")
     time.sleep(2)
     driver.tap([(490, 497)], 1000)
     driver.implicitly_wait(3)
-    print "5"
+
+    time.sleep(2)
+    driver.tap([(490, 597)], 1000)
+    driver.implicitly_wait(3)
+    print("5")
     time.sleep(2)
     driver.tap([(410, 674)], 1000)
     driver.implicitly_wait(3)
     driver.tap([(355, 781)], 1000)
     driver.implicitly_wait(3)
     driver.tap([(792, 796)], 1000)
-    print "6"
+
+    driver.implicitly_wait(3)
+    driver.tap([(410, 774)], 1000)
+    driver.implicitly_wait(3)
+    driver.tap([(355, 851)], 1000)
+    driver.implicitly_wait(3)
+    driver.tap([(792, 996)], 1000)
+    print("6")
     driver.implicitly_wait(3)
     driver.tap([(525, 707)], 1000)
     driver.implicitly_wait(3)
     driver.tap([(813, 846)], 1000)
     driver.implicitly_wait(3)
     driver.tap([(725, 880)], 1000)
-    print "7"
+
+    driver.implicitly_wait(3)
+    driver.tap([(525, 807)], 1000)
+    driver.implicitly_wait(3)
+    driver.tap([(813, 946)], 1000)
+    driver.implicitly_wait(3)
+    driver.tap([(725, 950)], 1000)
+    print("7")
     time.sleep(2)
     driver.tap([(545, 747)], 1000)
     driver.implicitly_wait(3)
     driver.tap([(756, 615)], 1000)
     driver.implicitly_wait(3)
-    print "8"
+
+    time.sleep(2)
+    driver.tap([(545, 817)], 1000)
+    driver.implicitly_wait(3)
+    driver.tap([(756, 685)], 1000)
+    driver.implicitly_wait(3)
+    print("8")
     driver.tap([(515, 810)], 1000)
     driver.implicitly_wait(3)
     driver.tap([(596, 710)], 1000)
     driver.implicitly_wait(3)
-    print "9"
+
+    driver.tap([(515, 880)], 1000)
+    driver.implicitly_wait(3)
+    driver.tap([(596, 780)], 1000)
+    driver.implicitly_wait(3)
+    print("9")
     driver.tap([(508, 842)], 1000)
     driver.implicitly_wait(3)
     driver.tap([(524, 853)], 1000)
     driver.implicitly_wait(3)
-    print "10"
+
+    driver.tap([(508, 912)], 1000)
+    driver.implicitly_wait(3)
+    driver.tap([(524, 923)], 1000)
+    driver.implicitly_wait(3)
+    print("10")
     driver.tap([(574, 853)], 1000)
     driver.implicitly_wait(3)
     driver.tap([(736, 579)], 1000)
     driver.implicitly_wait(3)
-    print "10"
+
+    driver.tap([(574, 923)], 1000)
+    driver.implicitly_wait(3)
+    driver.tap([(736, 649)], 1000)
+    driver.implicitly_wait(3)
+    print("10")
     driver.tap([(498, 680)], 1000)
     driver.implicitly_wait(3)
-    print "11"
+    driver.tap([(498, 750)], 1000)
+    driver.implicitly_wait(3)
+    print("11")
     driver.tap([(696, 543)], 1000)
     driver.implicitly_wait(3)
-    print "12"
+    driver.tap([(696, 613)], 1000)
+    driver.implicitly_wait(3)
+    print("12")
     driver.tap([(265, 850)], 1000)
     driver.implicitly_wait(3)
     driver.tap([(254, 834)], 1000)
@@ -328,7 +425,25 @@ def Drawing_pic_horse(driver):
     driver.tap([(197, 756)], 1000)
     driver.implicitly_wait(3)
     driver.tap([(194, 737)], 1000)
-    print "13"
+
+    driver.implicitly_wait(3)
+    driver.tap([(265, 920)], 1000)
+    driver.implicitly_wait(3)
+
+    driver.tap([(280, 920)], 1000)
+    driver.implicitly_wait(3)
+    driver.tap([(254, 904)], 1000)
+    driver.implicitly_wait(3)
+    driver.tap([(240, 885)], 1000)
+    driver.implicitly_wait(3)
+    driver.tap([(225, 855)], 1000)
+    driver.implicitly_wait(3)
+    driver.tap([(214, 842)], 1000)
+    driver.implicitly_wait(3)
+    driver.tap([(197, 826)], 1000)
+    driver.implicitly_wait(3)
+    driver.tap([(194, 807)], 1000)
+    print("13")
     driver.tap([(320, 1397)], 1000)
     driver.implicitly_wait(3)
     driver.tap([(576, 1236)], 1000)
@@ -337,15 +452,24 @@ def Drawing_pic_horse(driver):
     driver.implicitly_wait(3)
     driver.tap([(699, 1180)], 1000)
     driver.implicitly_wait(3)
-    print "14"
 
+    driver.tap([(320, 1467)], 1000)
+    driver.implicitly_wait(3)
+
+    driver.tap([(576, 1306)], 1000)
+    driver.implicitly_wait(3)
+    driver.tap([(674, 1335)], 1000)
+    driver.implicitly_wait(3)
+    driver.tap([(699, 1230)], 1000)
+    driver.implicitly_wait(3)
+    print("14")
     m = 0
     while not isExistElementByID(driver, "flParticle"):
         driver.implicitly_wait(3)
         m = m + 1
         if m > 3:
             break
-            print "enter Drawing_Done_UI error"
+            print ("enter Drawing_Done_UI error")
 
     Drawing_Done_UI_Check(driver)
 
@@ -359,17 +483,17 @@ def Drawing_pic_tiger(driver):
     driver.implicitly_wait(3)
     driver.tap([(655, 1066)], 1000)
     driver.implicitly_wait(3)
-    print "1"
+    # print "1"
     driver.tap([(508, 529)], 1000)
     driver.implicitly_wait(3)
     driver.tap([(574, 539)], 1000)
     driver.implicitly_wait(3)
-    print "2"
+    # print "2"
     driver.tap([(395, 1014)], 1000)
     driver.implicitly_wait(3)
     driver.tap([(670, 1007)], 1000)
     driver.implicitly_wait(3)
-    print "3"
+    # print "3"
     driver.tap([(203, 508)], 1000)
     driver.implicitly_wait(3)
     driver.tap([(430, 600)], 1000)
@@ -392,7 +516,7 @@ def Drawing_pic_tiger(driver):
     driver.implicitly_wait(3)
     driver.tap([(535, 1392)], 1000)
     driver.implicitly_wait(3)
-    print "4"
+    # print "4"
     driver.tap([(180, 690)], 1000)
     driver.implicitly_wait(3)
     driver.tap([(900, 692)], 1000)
@@ -405,7 +529,7 @@ def Drawing_pic_tiger(driver):
     driver.implicitly_wait(3)
     driver.tap([(880, 1025)], 1000)
     driver.implicitly_wait(3)
-    print "5"
+    # print "5"
     driver.tap([(324, 635)], 1000)
     driver.implicitly_wait(3)
     driver.tap([(764, 650)], 1000)
@@ -418,7 +542,7 @@ def Drawing_pic_tiger(driver):
     driver.implicitly_wait(3)
     driver.tap([(666, 1279)], 1000)
     driver.implicitly_wait(3)
-    print "6"
+    # print "6"
     driver.implicitly_wait(3)
     driver.tap([(396, 887)], 1000)
     driver.implicitly_wait(3)
@@ -430,34 +554,34 @@ def Drawing_pic_tiger(driver):
     driver.implicitly_wait(3)
     driver.tap([(567, 1234)], 1000)
     driver.implicitly_wait(3)
-    print "7"
+    # print "7"
     driver.implicitly_wait(3)
     driver.tap([(268, 794)], 1000)
     driver.implicitly_wait(3)
     driver.tap([(848, 794)], 1000)
     driver.implicitly_wait(3)
-    print "8"
+    # print "8"
     driver.tap([(935, 1297)], 1000)
     driver.implicitly_wait(3)
-    print "9"
+    # print "9"
     driver.tap([(534, 1077)], 1000)
     driver.implicitly_wait(3)
-    print "10"
+    # print "10"
     driver.tap([(369, 925)], 1000)
     driver.implicitly_wait(3)
     driver.tap([(698, 934)], 1000)
     driver.implicitly_wait(3)
-    print "11"
+    # print "11"
     driver.tap([(268, 916)], 1000)
     driver.implicitly_wait(3)
     driver.tap([(814, 934)], 1000)
     driver.implicitly_wait(3)
-    print "12"
+    # print "12"
     driver.tap([(306, 1031)], 1000)
     driver.implicitly_wait(3)
     driver.tap([(791, 1027)], 1000)
     driver.implicitly_wait(3)
-    print "13"
+    # print "13"
 
     time.sleep(3)
     Drawing_Done_UI_Check(driver)

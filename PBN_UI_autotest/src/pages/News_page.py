@@ -24,8 +24,8 @@ def checknewsstaticUI(driver):
         assert (isExistElementsByID(driver,"paint.by.number.pixel.art.coloring.drawing.puzzle:id/tv_title") == True)
         assert (isExistElementsByID(driver,"paint.by.number.pixel.art.coloring.drawing.puzzle:id/tv_des") == True)
         assert (isExistElementsByID(driver,"paint.by.number.pixel.art.coloring.drawing.puzzle:id/tv_get_now") == True)
-    except AssertionError,msg:
-        print msg
-        print "news view error"
+    except AssertionError as msg:
+        print (msg)
+        print ("news view error")
     else:
-        print "news view pass"
+        print ("news view pass")

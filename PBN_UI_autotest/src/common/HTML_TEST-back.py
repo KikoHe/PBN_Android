@@ -91,12 +91,16 @@ Version in 0.7.1
 # TODO: simplify javascript using ,ore than 1 class in the class attribute?
 
 import datetime
-import io
 import sys
+# reload(sys)
 import time
+# sys.setdefaultencoding('utf8')
 import unittest
 from xml.sax import saxutils
-
+from io import StringIO
+dot_data = StringIO()
+import io
+import re
 
 # ------------------------------------------------------------------------
 # The redirectors below are used to capture output during testing. Output
@@ -115,7 +119,8 @@ class OutputRedirector(object):
         self.fp = fp
 
     def write(self, s):
-        self.fp.write(s)
+        # self.fp.write(s)
+        self.fp.write(bytes(s,'UTF-8'))
 
     def writelines(self, lines):
         self.fp.writelines(lines)
@@ -535,6 +540,7 @@ class _TestResult(TestResult):
 
     def startTest(self, test):
         TestResult.startTest(self, test)
+
         # just one buffer for both stdout and stderr
         self.outputBuffer = io.StringIO()
         stdout_redirector.fp = self.outputBuffer
@@ -628,7 +634,8 @@ class HTMLTestRunner(Template_mixin):
         test(result)
         self.stopTime = datetime.datetime.now()
         self.generateReport(test, result)
-        print (sys.stderr, '\nTime Elapsed: %s' % (self.stopTime-self.startTime))
+        # print >>sys.stderr, '\nTime Elapsed: %s' % (self.stopTime-self.startTime)
+        print(sys.stderr, '\nTime Elapsed: %s' % (self.stopTime - self.startTime))
         return result
 
 
@@ -639,6 +646,7 @@ class HTMLTestRunner(Template_mixin):
         classes = []
         for n,t,o,e in result_list:
             cls = t.__class__
+            # if not rmap.has_key(cls):
             if not cls in rmap:
                 rmap[cls] = []
                 classes.append(cls)
@@ -684,7 +692,8 @@ class HTMLTestRunner(Template_mixin):
             report = report,
             ending = ending,
         )
-        self.stream.write(output.encode('utf8'))
+        self.stream.write(output)
+        # self.stream.write(output.encode('utf8'))
 
 
     def _generate_stylesheet(self):
@@ -760,18 +769,22 @@ class HTMLTestRunner(Template_mixin):
         tmpl = has_output and self.REPORT_TEST_WITH_OUTPUT_TMPL or self.REPORT_TEST_NO_OUTPUT_TMPL
 
         # o and e should be byte string because they are collected from stdout and stderr?
-        # if isinstance(o,str):
+        if isinstance(o,str):
             # TODO: some problem with 'string_escape': it escape \n and mess up formating
             # uo = unicode(o.encode('string_escape'))
-            # uo = e
-        # else:
-        uo = o
+            # uo = o.encode('latin-1')
+            uo = o
+        else:
+            # uo = o
+            uo = o.decode('utf-8')
         if isinstance(e,str):
             # TODO: some problem with 'string_escape': it escape \n and mess up formating
             # ue = unicode(e.encode('string_escape'))
+            # ue = e.encode('latin-1')
             ue = e
         else:
-            ue = e
+            # ue = e
+            ue = e.decode('utf-8')
 
         script = self.REPORT_TEST_OUTPUT_TMPL % dict(
             id = tid,

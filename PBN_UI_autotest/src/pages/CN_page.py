@@ -12,9 +12,7 @@ from src.common.Base_unit import *
 from src.common.gesture_mainpulation import *
 from src.pages.Library_page import *
 
-
 def Check_CN_Lib_Banner(driver):
-
     try:
         assert  (isExistElementByID(driver,"paint.by.number.pixel.art.coloring.drawing.puzzle:id/bannerViewPager")==True),"bannerViewPager error"
         assert  (isExistElementByID(driver,"paint.by.number.pixel.art.coloring.drawing.puzzle:id/root")==True),"root error"
@@ -22,26 +20,25 @@ def Check_CN_Lib_Banner(driver):
         assert  (isExistElementByID(driver, "paint.by.number.pixel.art.coloring.drawing.puzzle:id/circleIndicator") ==True),"circleIndicator error"
         assert  (isExistTextInElementByID(driver, "paint.by.number.pixel.art.coloring.drawing.puzzle:id/view_text", "每日礼物") ==True),"每日礼物 error"
         assert  (isExistTextInElementByID(driver, "paint.by.number.pixel.art.coloring.drawing.puzzle:id/view_sub_text", "现在开启礼物！") ==True),"现在开启礼物！ error"
-    except AssertionError,msg:
-        print msg
-        print "daily banner error"
+    except AssertionError as msg:
+        print (msg)
+        print ("daily banner error")
     else:
-        print "daily banner pass"
+        print ("daily banner pass")
 
 def checkcncategorytab(driver):
     '''检查第一页分类标题是否正常'''
-
     try:
-        assert (isExistTextInElementByxpath(driver,"//android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.TextView[contains(@text,'推荐')]") == True)
-        assert (isExistTextInElementByxpath(driver,"//android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.TextView[contains(@text,'人物')]") == True)
-        assert (isExistTextInElementByxpath(driver,"//android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.TextView[contains(@text,'萌宠')]") == True)
-        assert (isExistTextInElementByxpath(driver,"//android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.TextView[contains(@text,'卡通')]") == True)
-        assert (isExistTextInElementByxpath(driver,"//android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.TextView[contains(@text,'人气')]") == True)
-    except AssertionError,msg:
-        print msg
-        print "First five category error"
+        assert (isExistTextInElementByxpath(driver,"//android.widget.HorizontalScrollView/android.widget.LinearLayout/android.view.ViewGroup/android.widget.TextView[contains(@text,'推荐')]") == True)
+        assert (isExistTextInElementByxpath(driver,"//android.widget.HorizontalScrollView/android.widget.LinearLayout/android.view.ViewGroup/android.widget.TextView[contains(@text,'精品')]") == True)
+        assert (isExistTextInElementByxpath(driver,"//android.widget.HorizontalScrollView/android.widget.LinearLayout/android.view.ViewGroup/android.widget.TextView[contains(@text,'古风')]") == True)
+        assert (isExistTextInElementByxpath(driver,"//android.widget.HorizontalScrollView/android.widget.LinearLayout/android.view.ViewGroup/android.widget.TextView[contains(@text,'人物')]") == True)
+    except AssertionError as msg:
+        print (msg)
+        print ("First five category error")
+        driver.get_screenshot_as_file("/Users/apple/Desktop/pbn_autotest_android_pyton3/screenshot/error5.png")
     else:
-        print "First five category pass"
+        print ("First five category pass")
 
 def checkcntab(driver):
     '''tab'''
@@ -57,28 +54,24 @@ def checkcntab(driver):
         assert  (isExistTextInElementsByid(driver, "paint.by.number.pixel.art.coloring.drawing.puzzle:id/tv_title",0,"图库")==True)
         assert  (isExistTextInElementsByid(driver, "paint.by.number.pixel.art.coloring.drawing.puzzle:id/tv_title",1,"每日更新")==True)
         assert  (isExistTextInElementsByid(driver, "paint.by.number.pixel.art.coloring.drawing.puzzle:id/tv_title",2,"我的作品")==True)
-    except AssertionError,msg:
-        print msg
-        print "tab display error"
+    except AssertionError as msg:
+        print (msg)
+        print ("tab display error")
     else:
-        print "tab display pass"
+        print ("tab display pass")
 
 def CheckCNMyworktitle(driver):
-
-
     try:
         assert (isExistElementByID(driver, "titleContainer") == True), "titleContainer error"
         assert (isExistElementByID(driver, "tv_title") == True), "app_bar error"
         assert (isExistTextInElementByID(driver, "tv_title",
                                           "我的作品") == True)
         assert (isExistElementByID(driver, "view_setting") == True), "view_setting error"
-
-    except AssertionError, msg:
-        print msg
-        print "MyWork title log out display error"
-
+    except AssertionError as msg:
+        print (msg)
+        print ("MyWork title log out display error")
     else:
-        print "MyWork title log out display pass"
+        print ("MyWork title log out display pass")
 
 def CheckMywWorkCNNoPic(driver):
 
@@ -88,10 +81,10 @@ def CheckMywWorkCNNoPic(driver):
         assert (isExistTextInElementByID(driver, "emptyText",
                                           "你还没有涂色作品，快去绘制你的艺术品吧！") == True)
 
-    except AssertionError,msg:
-        print msg
-        print "My work without pic display error"
-    print "My work without pic display pass"
+    except AssertionError as msg:
+        print (msg)
+        print ("My work without pic display error")
+    print ("My work without pic display pass")
 
 
 def Free_hint_CN_Check(driver):
@@ -107,6 +100,6 @@ def Free_hint_CN_Check(driver):
         assert (isExistElementByID(driver,"paint.by.number.pixel.art.coloring.drawing.puzzle:id/card_btn") == True)
         assert (isExistTextInElementByxpath(driver,
                                             "//android.widget.FrameLayout/android.widget.TextView[contains(@text,'观看')]") == True)
-    except AssertionError,msg:
-        print msg
-        print "free hint box error"
+    except AssertionError as msg:
+        print (msg)
+        print ("free hint box error")
